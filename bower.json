@@ -1,0 +1,25 @@
+{
+  "name": "SporteCommerce",
+  "authors": [
+    "kmmanoj <kmmanoj1990@gmail.com>",
+    "abhilashkr <abhilash.khokle@gmail.com>"
+  ],
+  "description": "The best place to buy your sports wears and equipments",
+  "main": "index.html",
+  "keywords": [
+    "sport",
+    "emcommerce",
+    "cricket",
+    "football",
+    "shinpad",
+    "bat",
+    "stud"
+  ],
+  "license": "None",
+  "homepage": "index.html",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}

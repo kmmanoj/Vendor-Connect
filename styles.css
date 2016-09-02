@@ -1,0 +1,28 @@
+.background{
+	background-size:cover;
+	opacity:0.7;
+	position: fixed;
+	height:100%;
+	width:100%;
+	z-index:-1;
+}
+
+a.navbar-brand{
+	color:#ffffff;
+}
+
+#topBar{
+	background-color: #008b8b;
+}
+
+.cat{
+	color:black;
+}
+
+.control-label{
+	color: #ffffff;
+}
+
+div.well{
+	
+}

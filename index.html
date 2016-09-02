@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="res/ecomIcon.png" />
+		<title>Ecom</title>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	</head>
+	<body>
+		<img src="res/ecom.jpg" class="background image-responsive"/>
+		<nav id="topBar" class="navbar navbar-light bg-primary navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand">Vendor Connect</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container" id="body">
+			<div class="well" style="background-color:rgba(76,76,166,0.1);border-radius:30px;padding:30px;color:transparent;border:transparent;height:100px;margin-top:15%">
+				<div class="row">
+					<form method="post" action="result.php">
+						<!-- The actual drop down list for categories in the back end -->
+						<select id="selectCat" name="maincategory" class="hidden">
+							<option>ALL</option>
+							<option>Football</option>
+							<option>Cricket</option>
+						</select>
+						<!-- The actual drop down list for sub categories in the back end -->
+						<select id="selectSubCat" name="subcategory" class="hidden">
+							<option>ALL</option>
+							<!-- <option>From database</option>
+							<option>fRom database</option> -->
+						</select>		     
+						<!-- The submit Button -->
+			     		<input type="submit" id="submit-form" class="hidden" />
+					</form>
+
+					<!-- The coooool looking button to select  a category -->
+					<button class="btn btn-default col-xs-2" id="catSelect"">--Category--</button>
+					<div class="col-xs-3" id="catList" style="display:none">
+						<div class="btn btn-group-vertical btn-block">
+								<button class="cat btn btn-primary">--ALL--</button>
+								<button class="cat btn btn-primary">Football</button>
+								<button class="cat btn btn-primary">Cricket</button>
+						</div>
+					</div>
+
+					<!-- The same cooooool looking button to select a sub category -->
+					<div class="col-xs-3" id="subCatList" style="display:none">
+						<div class="btn btn-group-vertical btn-block">
+								<button class="subcat btn btn-primary">--ALL--</button>
+							<!-- 	<button class="subcat btn btn-primary">From database</button>
+								<button class="subcat btn btn-primary">fRom database</button> -->
+						</div>
+					</div>
+					<button class="btn btn-default col-xs-2" id="subCatSelect" style="display:none">--Sub-Category--</button>
+
+					<!-- The Submit button for the form -->
+					<label type="button" class="btn btn-primary col-xs-2" for="submit-form"> <span class="glyphicon glyphicon-search"></span> Search</label>
+				</div>
+			</div>
+		</div>
+		<script src="behaviour.js"></script>
+		<script src="updateList.js"></script>
+	</body>
+</html>
